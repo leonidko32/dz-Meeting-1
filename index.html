@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+           box-sizing: border-box; 
+        }
+        body
+        {
+            min-height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+                                
+        }
+        html
+        {
+            height: 100%;
+        }
+        .container
+        {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: stretch;
+        }
+        .container1
+        {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: stretch;
+            flex-grow: 5;
+        }
+        .menu
+        {
+            background: red;
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .logo
+        {
+            background: orange;
+            flex-basis: 100px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .square
+        {
+           flex-basis: 100px;
+            flex-grow: 65;
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+        .wrapper
+        {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: row;
+            
+
+        }
+        .newsFeed
+        {
+            flex: 0 0 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: brown;
+            color: white;
+
+
+        }
+        .list
+        {
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: orange;
+
+        }
+
+        .footer
+        {
+            flex: 0 0 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: orange;
+
+        }
+        
+        .navigationBar
+        {
+            flex-basis: 0;
+            flex-grow: 35;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            color: white;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            Logo
+        </div>
+        <div class="menu">
+            Menu
+        </div>
+
+    </div>
+    <div class="container1">
+        <div class="square">
+            <div class="wrapper">
+                <div class="newsFeed">
+                    NEWS FEED
+                </div>
+                <div class="list">
+                    LIST OF SOMETHING
+                </div>
+                
+            </div>
+            <div class="footer">
+                Footer
+            </div>
+
+        </div>
+        <div class="navigationBar">
+            Navigatition Bar
+        </div>
+    </div>
+</body>
+</html>
